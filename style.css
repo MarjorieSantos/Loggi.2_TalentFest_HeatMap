@@ -1,0 +1,51 @@
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.table-select {
+  position: absolute;
+  top: 12vh;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 10px 15px;
+  border: 1px solid rgb(204, 204, 204);
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Roboto", "sans-serif";
+  line-height: 30px;
+}
+
+.btn  {
+    padding: 8px;
+    margin: 5px;
+    background: rgb(175, 209, 236);
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.map-style {
+    max-width: 600px;
+    height: 75%;
+    margin: 12vh auto 0px;
+    box-shadow: 5px 5px 3em  rgba(68, 68, 68, 0.308);
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+}
+
+p::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100px;
+    background: black;
+    margin: 15px auto;
+}
