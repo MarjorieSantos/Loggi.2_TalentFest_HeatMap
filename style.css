@@ -3,14 +3,20 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  letter-spacing: 2px;
 }
 
 header {
-  border-bottom: 2px solid #20cbd4;
+  padding: 25px;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid #FF8400;
 }
 
 .logo-loggi {
-  width: 10%;
+  width: 70%;
   padding: 1%;
 }
 
@@ -45,30 +51,32 @@ header {
 }
 
 .map-style {
-  max-width: 400px;
+  width: 100%;
   height: 75%;
-  margin: 12vh auto 0px;
+  margin: 10vh auto opx;
   box-shadow: 5px 5px 3em rgba(68, 68, 68, 0.308);
 }
 
 p {
   text-align: center;
-  font-size: 30px;
+  font-size: 45px;
+  padding: 0px 15px;
 }
 
 p::after {
   content: "";
   display: block;
-  height: 2px;
+  height: 4px;
   width: 100px;
-  background: black;
+  background: #FF8400;
   margin: 15px auto;
 }
 
 footer {
-  border-top: 2px solid #dbdf21;
-  padding: 1%;
+  border-top: 2px solid #FF8400;
+  padding: 40px;
   text-align: center;
+  background: #FF8400;
   font-size: 20px;
   font-weight: 500;
 }

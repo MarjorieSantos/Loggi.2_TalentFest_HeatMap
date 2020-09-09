@@ -2,47 +2,42 @@
 <html>
 
 <head>
-    <title>Heatmaps</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?AIzaSyAF8RVQYKHq0btSGay-TgbZC54L4H7TZWE&callback=initMap&libraries=visualization&v=weekly"
-        defer></script>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script src="./api.js"></script>
+  <title>Heatmaps</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?AIzaSyAF8RVQYKHq0btSGay-TgbZC54L4H7TZWE&callback=initMap&libraries=visualization&v=weekly"
+    defer></script>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script src="./api.js"></script>
 </head>
 
 <body>
 
-    <header>
-        <img class="logo-loggi" src="images/loggi_logo.png">
-    </header>
-    <p>Veja onde estão os entregadores da Loggi</p>
-    <!--<div id="floating-panel" class="table-select">
+  <header>
+    <img class="logo-loggi" src="images/loggi_logo.png">
+  </header>
+  <p>Veja onde estão os mensageiros da Loggi.</p>
+  <!--<div id="floating-panel" class="table-select">
         <button class="btn" onclick="toggleHeatmap()">Mostrar mapa de calor</button>
         <button class="btn" onclick="changeGradient()">Mudar gradiente</button>
         <button class="btn" onclick="changeRadius()">Mudar raio</button>
         <button class="btn" onclick="changeOpacity()">Mudar opacidade</button>
     </div>-->
 
-    <div id="map" class="map-style">
-        <p>HEY</p>
-    </div>
+  <div id="map" class="map-style"></div>
 
-    <div class="subtitles">
-        <ul>
-            <li>Total de mensageiros</li>
-            <li>Mensageiros disponíveis</li>
-            <li>Mensageiros indisponíveis</li>
-        </ul>
-    </div>
+  <div class="subtitles">
+    <ul>
+      <li>Total de mensageiros</li>
+      <li>Mensageiros disponíveis</li>
+      <li>Mensageiros indisponíveis</li>
+    </ul>
+  </div>
+  <footer>
+    Desenvolvido por Luana Andrade, Marjorie e Ully
+  </footer>
 
-
-
-    <footer>
-        Desenvolvido por Luana Andrade, Marjorie e Ully
-    </footer>
-
-    </div>
+  </div>
 
 </body>
 
