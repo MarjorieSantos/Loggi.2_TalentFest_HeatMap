@@ -66,10 +66,10 @@ header {
   text-align: center;
   border-radius: 5px;
   font-family: "Roboto", "sans-serif";
-  line-height: 30px;
-  height: 8vh;
+  height: 13vh;
   width: 85vw;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -80,7 +80,8 @@ header {
   font-size: 35px;
   color: white;
   border-radius: 5px;
-  width: 50%;
+  width: 32%;
+  height: 6vh;
 }
 
 .map-style {
