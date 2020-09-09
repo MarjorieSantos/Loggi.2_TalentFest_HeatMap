@@ -18,6 +18,28 @@
   text-align: justify;
 }
 
+.btn-modal-area {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.modal-btn {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+  background: #39b9fc;
+  box-shadow: 1px 4px 4px rgb(7 7 7 / 62%);
+}
+
+.logo-btn {
+  width: 85%;
+}
+
+.close-btn {
+  background: #ff2f00eb;
+}
+
 #modal {
   position: fixed;
   height: 100vh;
@@ -27,15 +49,14 @@
   left: 0;
   opacity: 0;
   visibility: hidden;
+  z-index: 200;
 }
 
 .close {
   text-decoration: none;
-  color: #fff;
+  color: white;
   font-size: 2em;
-  position: absolute;
-  right: 20%;
-  top: 20%;
+  font-weight: bolder;
 }
 
 .msg {
