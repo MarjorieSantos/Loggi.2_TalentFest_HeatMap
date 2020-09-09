@@ -41,10 +41,6 @@ async function initMap() {
     return new google.maps.LatLng(heatpoint.lat, heatpoint.lng)
   })
 
-  // const coords = test.drivers.map((item) => {
-  //   return new google.maps.LatLng(item.lat, item.lng)
-  // })
-
   heatmap = new google.maps.visualization.HeatmapLayer({
     data: coords,
     map: map
@@ -82,10 +78,3 @@ function changeRadius() {
 function changeOpacity() {
   heatmap.set("opacity", heatmap.get("opacity") ? null : 0.2);
 }
-
-// consumeLoggiApi(endPoint, graphQL).then(res => {
-//   console.log(res)
-//   res.data.closestDrivers.drivers.map(pontodecalor => {
-//     return console.log(pontodecalor.lat, pontodecalor.lng)
-//   })
-// })
