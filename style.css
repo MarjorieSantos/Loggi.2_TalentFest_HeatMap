@@ -62,7 +62,7 @@ header {
 
 .table-select {
   position: absolute;
-  left: 10%;
+  left: 5%;
   z-index: 5;
   background-color: #fff;
   padding: 10px 15px;
@@ -72,7 +72,7 @@ header {
   font-family: "Roboto", "sans-serif";
   line-height: 30px;
   height: 8vh;
-  width: 75vw;
+  width: 85vw;
   display: flex;
 }
 
@@ -85,7 +85,6 @@ header {
   color: white;
   border-radius: 5px;
   width: 50%;
-
 }
 
 .map-style {
