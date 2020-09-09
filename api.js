@@ -1,3 +1,5 @@
+let map, heatmap;
+
 const graphQL = `query AppQuery {
   closestDrivers(productType: 2, transportType: "1", lat: -23.55, lng: -46.63, radius: 10.0, limit: 200, citySlug:"sp") {
     driversCount
@@ -33,17 +35,28 @@ async function initMap() {
     mapTypeId: "hybrid"
   });
 
+  function teste({ lat, lng, zoom }) {
+    map = new google.maps.Map(document.getElementById("map"), {
+      zoom: zoom,
+      center: { lat, lng },
+      mapTypeId: "hybrid",
+    });
+
+    heatmap = new google.maps.visualization.HeatmapLayer({
+      data: coords,
+      map: map
+    });
+  }
+
+  const zoom = 13;
+
+  document.querySelector('#sul-sp').addEventListener('click', () => teste({ lat: -23.5838, lng: -46.7938, zoom }))
+  document.querySelector('#center-sp').addEventListener('click', () => teste({ lat: -23.5507, lng: -46.6331, zoom }))
+  document.querySelector('#north-sp').addEventListener('click', () => teste({ lat: -23.4777, lng: -46.6021, zoom }))
+  document.querySelector('#lest-sp').addEventListener('click', () => teste({ lat: -23.5676, lng: -46.5431, zoom }))
+
   const response = await consumeLoggiApi(endPoint, graphQL)
-
   const totalDrivers = response.data.closestDrivers.drivers;
-
-  response.data.closestDrivers.drivers.map(item => {
-    if (item.busy === true) {
-      console.log('indisponivel')
-    } else if (item.busy === false) {
-      console.log('disponivel')
-    }
-  })
 
   const coords = totalDrivers.map(heatpoint => {
     return new google.maps.LatLng(heatpoint.lat, heatpoint.lng)
