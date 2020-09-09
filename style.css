@@ -24,21 +24,22 @@ header {
   border: 2px solid #dbdf21;
   margin: 3%;
   font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
   width: 60%;
   height: 10%;
 }
 
 .subtitles ul {
   list-style: none;
+  padding: 10px;
+  margin: inherit;
 }
 
 .div-subtitles {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: 10px 0px;
 }
 
 .ball-color {
