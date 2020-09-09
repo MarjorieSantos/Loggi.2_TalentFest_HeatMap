@@ -35,11 +35,32 @@ async function initMap() {
 
   const response = await consumeLoggiApi(endPoint, graphQL)
 
-  console.log(response.data)
+  console.log(response)
 
   const coords = response.data.closestDrivers.drivers.map(heatpoint => {
     return new google.maps.LatLng(heatpoint.lat, heatpoint.lng)
   })
+
+  // const dusyDrivers = response.data.closestDrivers.drivers.map(heatpoint => {
+  //   return new google.maps.LatLng(heatpoint.lat, heatpoint.lng)
+  // })
+
+  const readyDrivers = response.data.closestDrivers.readyDriversCount
+  const busyDrivers = response.data.closestDrivers.busyDriversCount
+  const driversCount = response.data.closestDrivers.driversCount
+
+  const busyDriversCount = document.querySelector('#busy-drivers')
+  busyDriversCount.innerText = `Mensageiros indisponíveis ❯ ${busyDrivers}`;
+
+  const driversCountTotal = document.querySelector('#drivers-count')
+  driversCountTotal.innerText = `Total de mensageiros ❯ ${driversCount}`;
+
+  const readyDriversCount = document.querySelector('#ready-drivers')
+  readyDriversCount.innerText = `Mensageiros disponíveis ❯ ${readyDrivers}`;
+
+  // return new google.maps.LatLng(heatpoint.lat, heatpoint.lng)
+  console.log(readyDrivers)
+  console.log(busyDrivers)
 
   heatmap = new google.maps.visualization.HeatmapLayer({
     data: coords,
