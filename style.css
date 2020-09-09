@@ -8,7 +8,7 @@ body {
 
 header {
   padding: 25px;
-  height: 20vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,7 +58,7 @@ header {
 
 .table-select {
   position: absolute;
-  left: 5%;
+  left: 15%;
   z-index: 5;
   background-color: #fff;
   padding: 10px 15px;
@@ -67,9 +67,9 @@ header {
   border-radius: 5px;
   font-family: "Roboto", "sans-serif";
   height: 13vh;
-  width: 85vw;
+  width: 70vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -117,14 +117,32 @@ footer {
 }
 
 
-@media only screen and (min-width: 640px) {
+@media (min-width: 620px) {
   .logo-loggi {
-    width: 40vw;
+    max-width: 30vw;
   }
-}
-
-@media only screen and (min-width: 1200px) {
   p {
     font-size: 25px; 
   }
+
+  header {
+    height: 25vh;
+  }
+
+  /* .btn {
+    height: 8vh;
+    font-size: 20px;
+    width: 22vw;
+  }
+
+  .table-select {
+    width: 100%;
+    left: 0;
+    height: 10vh;
+  } */
 }
+
+/* 
+@media (min-width: 1200px) { */
+
+/* } */
