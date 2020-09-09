@@ -35,15 +35,19 @@ async function initMap() {
 
   const response = await consumeLoggiApi(endPoint, graphQL)
 
-  console.log(response)
+  const totalDrivers = response.data.closestDrivers.drivers;
 
-  const coords = response.data.closestDrivers.drivers.map(heatpoint => {
-    return new google.maps.LatLng(heatpoint.lat, heatpoint.lng)
+  response.data.closestDrivers.drivers.map(item => {
+    if (item.busy === true) {
+      console.log('indisponivel')
+    } else if (item.busy === false) {
+      console.log('disponivel')
+    }
   })
 
-  // const dusyDrivers = response.data.closestDrivers.drivers.map(heatpoint => {
-  //   return new google.maps.LatLng(heatpoint.lat, heatpoint.lng)
-  // })
+  const coords = totalDrivers.map(heatpoint => {
+    return new google.maps.LatLng(heatpoint.lat, heatpoint.lng)
+  })
 
   const readyDrivers = response.data.closestDrivers.readyDriversCount
   const busyDrivers = response.data.closestDrivers.busyDriversCount
@@ -58,10 +62,6 @@ async function initMap() {
   const readyDriversCount = document.querySelector('#ready-drivers')
   readyDriversCount.innerText = `Mensageiros disponíveis ❯ ${readyDrivers}`;
 
-  // return new google.maps.LatLng(heatpoint.lat, heatpoint.lng)
-  console.log(readyDrivers)
-  console.log(busyDrivers)
-
   heatmap = new google.maps.visualization.HeatmapLayer({
     data: coords,
     map: map
@@ -70,26 +70,6 @@ async function initMap() {
 
 function toggleHeatmap() {
   heatmap.setMap(heatmap.getMap() ? null : map);
-}
-
-function changeGradient() {
-  const gradient = [
-    "rgba(0, 255, 255, 0)",
-    "rgba(0, 255, 255, 1)",
-    "rgba(0, 191, 255, 1)",
-    "rgba(0, 127, 255, 1)",
-    "rgba(0, 63, 255, 1)",
-    "rgba(0, 0, 255, 1)",
-    "rgba(0, 0, 223, 1)",
-    "rgba(0, 0, 191, 1)",
-    "rgba(0, 0, 159, 1)",
-    "rgba(0, 0, 127, 1)",
-    "rgba(63, 0, 91, 1)",
-    "rgba(127, 0, 63, 1)",
-    "rgba(191, 0, 31, 1)",
-    "rgba(255, 0, 0, 1)"
-  ];
-  heatmap.set("gradient", heatmap.get("gradient") ? null : gradient);
 }
 
 function changeRadius() {
