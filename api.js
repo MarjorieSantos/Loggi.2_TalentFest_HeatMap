@@ -28,8 +28,8 @@ const consumeLoggiApi = async (endPointGraphql, query, variable = {}) => {
 
 async function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 13,
-    center: { lat: -23.3256, lng: -46.3820 },
+    zoom: 11,
+    center: { lat: -23.5506, lng: -46.6333 },
     mapTypeId: "hybrid"
   });
 

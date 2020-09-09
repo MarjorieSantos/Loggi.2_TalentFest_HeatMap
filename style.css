@@ -22,15 +22,15 @@ header {
 
 .subtitles {
   border: 2px solid #dbdf21;
-  margin: 3%;
-  font-size: 25px;
-  width: 60%;
-  height: 10%;
+  margin: 3% auto;
+  font-size: 35px;
+  width: 70%;
+  height: 13%;
 }
 
 .subtitles ul {
   list-style: none;
-  padding: 10px;
+  padding: 10px 20px;
   margin: inherit;
 }
 
