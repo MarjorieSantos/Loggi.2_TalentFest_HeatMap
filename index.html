@@ -8,6 +8,7 @@
     src="https://maps.googleapis.com/maps/api/js?AIzaSyAF8RVQYKHq0btSGay-TgbZC54L4H7TZWE&callback=initMap&libraries=visualization&v=weekly"
     defer></script>
   <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="stylesheet" type="text/css" href="./modal.css" />
   <script src="./api.js"></script>
 </head>
 
@@ -16,6 +17,30 @@
   <header>
     <img class="logo-loggi" src="images/loggi_logo.png">
   </header>
+
+  <div class="content">
+    <a href="#modal" class="btn">Abrir Modal</a>
+
+    <div id="modal">
+
+      <div class="msg">
+        <p>
+          Bem Vindos!
+        </p>
+        <p class="justify">
+          Aqui você encontrará um mapa de calor que mostrará as regiões da cidade de São Paulo que possuem maior oferta
+          de mensageiros Loggi disponíveis para alocação.
+        </p>
+
+        <div class="btn-modal-area">
+          <button class="modal-btn"><a href="https://www.loggi.com/"><img class="logo-btn"
+                src="images/loggi_btn.png"></a></button>
+          <button class="modal-btn close-btn"><a href="" class="close">X</a></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
   <p>Veja onde estão os mensageiros da Loggi.</p>
   <div id="floating-panel" class="table-select">
     <button class="btn" id="sul-sp">Região Sul</button>

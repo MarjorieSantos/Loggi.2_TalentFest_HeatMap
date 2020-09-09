@@ -25,13 +25,13 @@ header {
   margin: 3% auto;
   font-size: 35px;
   width: 70%;
-  height: 13%;
+  height: 12vh;
 }
 
 .subtitles ul {
   list-style: none;
   padding: 10px 20px;
-  margin: inherit;
+  margin: 0;
 }
 
 .div-subtitles {
@@ -121,12 +121,13 @@ footer {
   .logo-loggi {
     max-width: 30vw;
   }
-  p {
-    font-size: 25px; 
-  }
 
   header {
     height: 25vh;
+  }
+
+  .subtitles {
+    height: 16vh;
   }
 
   /* .btn {
