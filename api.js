@@ -80,11 +80,3 @@ async function initMap() {
     map: map
   });
 }
-
-function toggleHeatmap() {
-  heatmap.setMap(heatmap.getMap() ? null : map);
-}
-
-function changeRadius() {
-  heatmap.set("radius", heatmap.get("radius") ? null : 20);
-}

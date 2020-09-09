@@ -16,7 +16,7 @@ header {
 }
 
 .logo-loggi {
-  width: 70%;
+  width: 70vw;
   padding: 1%;
 }
 
@@ -69,6 +69,7 @@ header {
   height: 13vh;
   width: 85vw;
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -80,7 +81,7 @@ header {
   font-size: 35px;
   color: white;
   border-radius: 5px;
-  width: 32%;
+  width: 32vw;
   height: 6vh;
 }
 
@@ -113,4 +114,17 @@ footer {
   background: #FF8400;
   font-size: 40px;
   font-weight: 500;
+}
+
+
+@media only screen and (min-width: 640px) {
+  .logo-loggi {
+    width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  p {
+    font-size: 25px; 
+  }
 }
