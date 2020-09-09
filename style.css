@@ -81,7 +81,7 @@ header {
   margin: 5px;
   background: #FF8400;
   border: none;
-  font-size: 25px;
+  font-size: 35px;
   color: white;
   border-radius: 5px;
   width: 50%;
@@ -111,6 +111,36 @@ p::after {
 
 footer {
   border-top: 2px solid #FF8400;
+  padding: 40px;
+  text-align: center;
+  background: #FF8400;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 40px;
+  text-align: center;
+  background: #FF8400;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 40px;
+  text-align: center;
+  background: #FF8400;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 40px;
+  text-align: center;
+  background: #FF8400;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 40px;
+  text-align: center;
+  background: #FF8400;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 40px;
+  text-align: center;
+  background: #FF8400;
+  font-size: 40px;
+  font-weight: 500;
   padding: 40px;
   text-align: center;
   background: #FF8400;
