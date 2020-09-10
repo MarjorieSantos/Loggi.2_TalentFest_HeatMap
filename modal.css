@@ -6,7 +6,7 @@
   text-decoration: none;
   padding: 10px;
   color: #fff;
-  background: #ffffff;
+  background: red;
   border-radius: 5px;
   position: relative;
   top: 200px;
@@ -29,7 +29,6 @@
   border-radius: 50%;
   border: 3px solid white;
   background: #39b9fc;
-  box-shadow: 1px 4px 4px rgb(7 7 7 / 62%);
 }
 
 .logo-btn {

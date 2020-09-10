@@ -8,30 +8,30 @@ body {
 
 header {
   padding: 25px;
-  height: 20vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 3px solid #FF8400;
+  border-bottom: 3px solid #ff8400;
 }
 
 .logo-loggi {
-  width: 70%;
+  width: 70vw;
   padding: 1%;
 }
 
 .subtitles {
   border: 2px solid #dbdf21;
-  margin: 3%;
-  font-size: 25px;
-  width: 60%;
-  height: 10%;
+  margin: 3% auto;
+  font-size: 35px;
+  width: 70%;
+  height: 12vh;
 }
 
 .subtitles ul {
   list-style: none;
-  padding: 10px;
-  margin: inherit;
+  padding: 10px 20px;
+  margin: 0;
 }
 
 .div-subtitles {
@@ -48,21 +48,17 @@ header {
   border-radius: 100%;
 }
 
-.background-yellow {
-  background: yellow;
-}
-
 .background-red {
   background: red;
 }
 
 .background-blue {
-  background: #01BAFF;
+  background: #01baff;
 }
 
 .table-select {
   position: absolute;
-  left: 5%;
+  left: 15%;
   z-index: 5;
   background-color: #fff;
   padding: 10px 15px;
@@ -70,21 +66,23 @@ header {
   text-align: center;
   border-radius: 5px;
   font-family: "Roboto", "sans-serif";
-  line-height: 30px;
-  height: 8vh;
-  width: 85vw;
+  height: 13vh;
+  width: 70vw;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .btn {
   padding: 8px;
   margin: 5px;
-  background: #FF8400;
+  background: #ff8400;
   border: none;
   font-size: 35px;
   color: white;
   border-radius: 5px;
-  width: 50%;
+  width: 32vw;
+  height: 6vh;
 }
 
 .map-style {
@@ -105,45 +103,46 @@ p::after {
   display: block;
   height: 4px;
   width: 100px;
-  background: #FF8400;
+  background: #ff8400;
   margin: 15px auto;
 }
 
 footer {
-  border-top: 2px solid #FF8400;
+  border-top: 2px solid #ff8400;
   padding: 40px;
   text-align: center;
-  background: #FF8400;
-  font-size: 40px;
-  font-weight: 500;
-  padding: 40px;
-  text-align: center;
-  background: #FF8400;
-  font-size: 40px;
-  font-weight: 500;
-  padding: 40px;
-  text-align: center;
-  background: #FF8400;
-  font-size: 40px;
-  font-weight: 500;
-  padding: 40px;
-  text-align: center;
-  background: #FF8400;
-  font-size: 40px;
-  font-weight: 500;
-  padding: 40px;
-  text-align: center;
-  background: #FF8400;
-  font-size: 40px;
-  font-weight: 500;
-  padding: 40px;
-  text-align: center;
-  background: #FF8400;
-  font-size: 40px;
-  font-weight: 500;
-  padding: 40px;
-  text-align: center;
-  background: #FF8400;
+  background: #ff8400;
   font-size: 40px;
   font-weight: 500;
 }
+
+@media (min-width: 620px) {
+  .logo-loggi {
+    max-width: 30vw;
+  }
+
+  header {
+    height: 25vh;
+  }
+
+  .subtitles {
+    height: 16vh;
+  }
+
+  /* .btn {
+    height: 8vh;
+    font-size: 20px;
+    width: 22vw;
+  }
+
+  .table-select {
+    width: 100%;
+    left: 0;
+    height: 10vh;
+  } */
+}
+
+/* 
+@media (min-width: 1200px) { */
+
+/* } */

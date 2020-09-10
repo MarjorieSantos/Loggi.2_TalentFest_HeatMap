@@ -35,7 +35,7 @@ async function initMap() {
 
   const response = await consumeLoggiApi(endPoint, graphQL)
 
-  console.log(response.data)
+  //console.log(response.data)
 
   const coords = response.data.closestDrivers.drivers.map(heatpoint => {
     return new google.maps.LatLng(heatpoint.lat, heatpoint.lng)

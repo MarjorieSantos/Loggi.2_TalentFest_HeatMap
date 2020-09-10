@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="./style.css" />
   <link rel="stylesheet" type="text/css" href="./modal.css" />
   <script src="./api.js"></script>
+  <script src="./index.js"></script>
 </head>
 
 <body>
@@ -18,10 +19,10 @@
     <img class="logo-loggi" src="images/loggi_logo.png">
   </header>
 
-  <div class="content">
-    <a href="#modal" class="btn">Abrir Modal</a>
+  <div class="content" id="content">
+    <a href="#modal" class="btn">Sobre</a>
 
-    <div id="modal">
+    <div id="modal" class="modal">
 
       <div class="msg">
         <p>
@@ -39,9 +40,7 @@
         </div>
       </div>
     </div>
-
   </div>
-
 
   <p>Veja onde estão os mensageiros da Loggi.</p>
   <div id="floating-panel" class="table-select">
@@ -76,5 +75,15 @@
   </div>
 
 </body>
+
+<!--<script>
+  function inicialModal(modal) {
+    const modalId = document.getElementById("modal");
+    console.log(modalId);
+    modalId.classList.add('mostrar');
+  }
+
+  inicialModal('modal');
+</script>-->
 
 </html>
