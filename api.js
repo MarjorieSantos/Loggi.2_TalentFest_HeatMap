@@ -52,7 +52,39 @@ async function initMap() {
   document.querySelector('#center-sp').addEventListener('click', () => chosenRegion({ lat: -23.5507, lng: -46.6331, zoom }))
   document.querySelector('#north-sp').addEventListener('click', () => chosenRegion({ lat: -23.4777, lng: -46.6021, zoom }))
   document.querySelector('#lest-sp').addEventListener('click', () => chosenRegion({ lat: -23.5676, lng: -46.5431, zoom }))
-  document.querySelector('#oeste-sp').addEventListener('click', () => chosenRegion({ lat: -23.5475, lng: -46.7018, zoom }))
+  document.querySelector('#oeste-sp').addEventListener('click', () => chosenRegion({ lat: -23.5475, lng: -46.7018, zoom }));
+
+  const regionmap = {
+    sul: {
+      center: { lat: -23.5838, lng: -46.7938 },
+
+    },
+    norte: {
+      center: { lat: -23.4777, lng: -46.6021 },
+    },
+    leste: {
+      center: { lat: -23.5676, lng: -46.5431 },
+    },
+    oeste: {
+      center: { lat: -23.5475, lng: -46.7018 },
+    },
+    centro: {
+      center: { lat: -23.5507, lng: -46.6331 },
+    },
+  };
+
+  for (const region in regionmap) {
+    const cityCircle = new google.maps.Circle({
+      strokeColor: "#FF0000",
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: "#FF0000",
+      fillOpacity: 0.35,
+      map,
+      center: regionmap[region].center,
+      radius: Math.sqrt(1000) * 100
+    });
+  }
 
   const response = await consumeLoggiApi(endPoint, graphQL)
   const totalDrivers = response.data.closestDrivers.drivers;
