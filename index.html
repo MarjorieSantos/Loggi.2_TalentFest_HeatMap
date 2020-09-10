@@ -1,13 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa de calor - Loggi</title>
+  <title>Heatmaps</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?AIzaSyAF8RVQYKHq0btSGay-TgbZC54L4H7TZWE&callback=initMap&libraries=visualization&v=weekly"
+    defer></script>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="stylesheet" type="text/css" href="./modal.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <script src="./api.js"></script>
 </head>
 
 <body>
+
+  <header>
+    <img class="logo-loggi" src="images/loggi_logo.png">
+  </header>
+
+  <p class="justify">
+    Empresa, aqui você encontrará um mapa de calor que mostrará as regiões da cidade de São Paulo que possuem
+    maior oferta de mensageiros Loggi disponíveis para alocação.
+  </p>
+
+  <main>
+    <div class="content-aside">
+      <div id="floating-panel" class="table-select">
+        <button class="btn ativo" id="sul-sp">Região Sul</button>
+        <button class="btn ativo" id="center-sp">Região Central</button>
+        <button class="btn ativo" id="north-sp">Região Norte</button>
+        <button class="btn ativo" id="lest-sp">Região Leste</button>
+        <button class="btn ativo" id="oeste-sp">Região Oeste</button>
+      </div>
+      <div class="subtitles">
+        <ul>
+          <div class="div-subtitles">
+            <li id="drivers-count"></li>
+          </div>
+          <div class="div-subtitles">
+            <li id="ready-drivers"></li>
+          </div>
+          <div class="div-subtitles">
+            <li id="busy-drivers"></li>
+          </div>
+          <div class="div-subtitles">
+            <li>Raio da região de acordo com seu ponto central. ❯ </li>
+            <div class="ball-red"></div>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <div id="map" class="map-style"></div>
+  </main>
+
+  <footer>
+    Desenvolvido por Luana Andrade, Marjorie e Ully
+  </footer>
+
+  </div>
 
 </body>
 

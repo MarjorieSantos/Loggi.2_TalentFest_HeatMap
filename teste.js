@@ -1,5 +1,0 @@
-teste{
-    jahkja;
-    ajisdjiasjidjaisijdjiasijd
-    pkookokoo
-}
