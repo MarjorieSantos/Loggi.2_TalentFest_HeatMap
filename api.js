@@ -82,7 +82,7 @@ async function initMap() {
       fillOpacity: 0.35,
       map,
       center: regionmap[region].center,
-      radius: Math.sqrt(1000) * 100
+      radius: Math.sqrt(700) * 100
     });
   }
 
