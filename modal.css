@@ -6,10 +6,10 @@
   text-decoration: none;
   padding: 10px;
   color: #fff;
-  background: red;
+  background: #ffffff;
   border-radius: 5px;
-  /*position: relative;
-  top: 200px;*/
+  position: relative;
+  top: 200px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
@@ -29,6 +29,7 @@
   border-radius: 50%;
   border: 3px solid white;
   background: #39b9fc;
+  box-shadow: 1px 4px 4px rgb(7 7 7 / 62%);
 }
 
 .logo-btn {
