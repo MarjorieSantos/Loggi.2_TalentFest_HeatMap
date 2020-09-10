@@ -7,18 +7,22 @@ body {
 }
 
 header {
-  padding: 25px;
+  padding: 25px 0px;
   height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 3px solid #FF8400;
+  background: #ff8400;
   width: 100%;
+}
+
+button, a {
+  cursor: pointer;
 }
 
 main {
   display: flex;
-  margin: 0px 20px;
   width: 100%;
   align-items: center;
   height: 100%;
@@ -55,6 +59,7 @@ p::after {
 .subtitles {
   border: 2px solid #FF8400;
   font-size: 20px;
+  border-radius: 5px;
   margin: 20px 0px 0px 0px;
 }
 
@@ -72,11 +77,20 @@ p::after {
   margin: 10px 0px;
 }
 
+.ball-red {
+  border: 1px solid red;
+  background: rgba(255, 0, 0, 0.521);
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  border-radius: 100%;
+}
+
 .table-select {
   z-index: 5;
   background-color: #fff;
   padding: 10px 15px;
-  border: 1px solid rgb(204, 204, 204);
+  border: 2px solid #FF8400;
   text-align: center;
   border-radius: 5px;
   font-family: "Roboto", "sans-serif";
@@ -88,7 +102,8 @@ p::after {
 
 .btn {
   margin: 5px;
-  background: #FF8400;
+  background: rgb(92, 173, 240);
+  color: black;
   border: none;
   font-size: 20px;
   color: white;
@@ -96,6 +111,11 @@ p::after {
   border-radius: 5px;
   width: 100%;
   height: 6vh;
+}
+
+.btn:hover {
+  background: #FF8400;
+  box-shadow: 3px 3px 1em rgba(68, 68, 68, 0.747);
 }
 
 .map-style {
@@ -106,7 +126,7 @@ p::after {
 
 footer {
   border-top: 2px solid #FF8400;
-  padding: 20px;
+  padding: 20px 0px;
   text-align: center;
   background: #FF8400;
   font-size: 15px;

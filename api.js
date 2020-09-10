@@ -48,15 +48,15 @@ async function initMap() {
 
   const zoom = 13;
 
-  document.querySelector('#sul-sp').addEventListener('click', () => chosenRegion({ lat: -23.5838, lng: -46.7938, zoom }))
+  document.querySelector('#sul-sp').addEventListener('click', () => chosenRegion({ lat: -23.6404, lng: -46.6996, zoom }))
   document.querySelector('#center-sp').addEventListener('click', () => chosenRegion({ lat: -23.5507, lng: -46.6331, zoom }))
   document.querySelector('#north-sp').addEventListener('click', () => chosenRegion({ lat: -23.4777, lng: -46.6021, zoom }))
   document.querySelector('#lest-sp').addEventListener('click', () => chosenRegion({ lat: -23.5676, lng: -46.5431, zoom }))
-  document.querySelector('#oeste-sp').addEventListener('click', () => chosenRegion({ lat: -23.5475, lng: -46.7018, zoom }));
+  document.querySelector('#oeste-sp').addEventListener('click', () => chosenRegion({ lat: -23.5514, lng: -46.7092, zoom }));
 
   const regionmap = {
     sul: {
-      center: { lat: -23.5838, lng: -46.7938 },
+      center: { lat: -23.6404, lng: -46.6996 },
 
     },
     norte: {
@@ -66,7 +66,7 @@ async function initMap() {
       center: { lat: -23.5676, lng: -46.5431 },
     },
     oeste: {
-      center: { lat: -23.5475, lng: -46.7018 },
+      center: { lat: -23.5514, lng: -46.7092 },
     },
     centro: {
       center: { lat: -23.5507, lng: -46.6331 },
