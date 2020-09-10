@@ -13,19 +13,49 @@ header {
   align-items: center;
   justify-content: center;
   border-bottom: 3px solid #FF8400;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  margin: 0px 20px;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
+  padding: 0px 20px;
+}
+
+p::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100px;
+  background: #FF8400;
+  margin: 15px auto;
 }
 
 .logo-loggi {
-  width: 70vw;
+  width: 15vw;
   padding: 1%;
 }
 
+.content-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .subtitles {
-  border: 2px solid #dbdf21;
-  margin: 3% auto;
-  font-size: 35px;
-  width: 70%;
-  height: 12vh;
+  border: 2px solid #FF8400;
+  font-size: 20px;
+  margin: 20px 0px 0px 0px;
 }
 
 .subtitles ul {
@@ -42,23 +72,7 @@ header {
   margin: 10px 0px;
 }
 
-.ball-color {
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-}
-
-.background-red {
-  background: red;
-}
-
-.background-blue {
-  background: #01BAFF;
-}
-
 .table-select {
-  position: absolute;
-  left: 15%;
   z-index: 5;
   background-color: #fff;
   padding: 10px 15px;
@@ -66,84 +80,37 @@ header {
   text-align: center;
   border-radius: 5px;
   font-family: "Roboto", "sans-serif";
-  height: 13vh;
-  width: 70vw;
+  width: 20vw;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .btn {
-  padding: 8px;
   margin: 5px;
   background: #FF8400;
   border: none;
-  font-size: 35px;
+  font-size: 20px;
   color: white;
+  padding: 5px 0px;
   border-radius: 5px;
-  width: 32vw;
+  width: 100%;
   height: 6vh;
 }
 
 .map-style {
-  width: 100%;
-  height: 75%;
-  margin: 10vh auto opx;
+  width: 50%;
+  height:100%;
   box-shadow: 5px 5px 3em rgba(68, 68, 68, 0.308);
-}
-
-p {
-  text-align: center;
-  font-size: 45px;
-  padding: 0px 20px;
-}
-
-p::after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 100px;
-  background: #FF8400;
-  margin: 15px auto;
 }
 
 footer {
   border-top: 2px solid #FF8400;
-  padding: 40px;
+  padding: 20px;
   text-align: center;
   background: #FF8400;
-  font-size: 40px;
+  font-size: 15px;
   font-weight: 500;
+  width: 100%;
+  margin-top: 25px;
 }
-
-
-@media (min-width: 620px) {
-  .logo-loggi {
-    max-width: 30vw;
-  }
-
-  header {
-    height: 25vh;
-  }
-
-  .subtitles {
-    height: 16vh;
-  }
-
-  /* .btn {
-    height: 8vh;
-    font-size: 20px;
-    width: 22vw;
-  }
-
-  .table-select {
-    width: 100%;
-    left: 0;
-    height: 10vh;
-  } */
-}
-
-/* 
-@media (min-width: 1200px) { */
-
-/* } */

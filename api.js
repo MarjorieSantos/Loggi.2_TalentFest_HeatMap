@@ -32,14 +32,12 @@ async function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: 11,
     center: { lat: -23.5506, lng: -46.6333 },
-    mapTypeId: "hybrid"
   });
 
-  function teste({ lat, lng, zoom }) {
+  function chosenRegion({ lat, lng, zoom }) {
     map = new google.maps.Map(document.getElementById("map"), {
       zoom: zoom,
       center: { lat, lng },
-      mapTypeId: "hybrid",
     });
 
     heatmap = new google.maps.visualization.HeatmapLayer({
@@ -50,10 +48,11 @@ async function initMap() {
 
   const zoom = 13;
 
-  document.querySelector('#sul-sp').addEventListener('click', () => teste({ lat: -23.5838, lng: -46.7938, zoom }))
-  document.querySelector('#center-sp').addEventListener('click', () => teste({ lat: -23.5507, lng: -46.6331, zoom }))
-  document.querySelector('#north-sp').addEventListener('click', () => teste({ lat: -23.4777, lng: -46.6021, zoom }))
-  document.querySelector('#lest-sp').addEventListener('click', () => teste({ lat: -23.5676, lng: -46.5431, zoom }))
+  document.querySelector('#sul-sp').addEventListener('click', () => chosenRegion({ lat: -23.5838, lng: -46.7938, zoom }))
+  document.querySelector('#center-sp').addEventListener('click', () => chosenRegion({ lat: -23.5507, lng: -46.6331, zoom }))
+  document.querySelector('#north-sp').addEventListener('click', () => chosenRegion({ lat: -23.4777, lng: -46.6021, zoom }))
+  document.querySelector('#lest-sp').addEventListener('click', () => chosenRegion({ lat: -23.5676, lng: -46.5431, zoom }))
+  document.querySelector('#oeste-sp').addEventListener('click', () => chosenRegion({ lat: -23.5475, lng: -46.7018, zoom }))
 
   const response = await consumeLoggiApi(endPoint, graphQL)
   const totalDrivers = response.data.closestDrivers.drivers;

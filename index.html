@@ -20,9 +20,7 @@
 
   <div class="content">
     <a href="#modal" class="btn">Abrir Modal</a>
-
     <div id="modal">
-
       <div class="msg">
         <p>
           Bem Vindos!
@@ -31,7 +29,6 @@
           Aqui você encontrará um mapa de calor que mostrará as regiões da cidade de São Paulo que possuem maior oferta
           de mensageiros Loggi disponíveis para alocação.
         </p>
-
         <div class="btn-modal-area">
           <button class="modal-btn"><a href="https://www.loggi.com/"><img class="logo-btn"
                 src="images/loggi_btn.png"></a></button>
@@ -39,34 +36,37 @@
         </div>
       </div>
     </div>
-
   </div>
+
   <p>Veja onde estão os mensageiros da Loggi.</p>
-  <div id="floating-panel" class="table-select">
-    <button class="btn" id="sul-sp">Região Sul</button>
-    <button class="btn" id="center-sp">Região Central</button>
-    <button class="btn" id="north-sp">Região Norte</button>
-    <button class="btn" id="lest-sp">Região Leste</button>
-  </div>
 
-  <div id="map" class="map-style"></div>
+  <main>
+    <div class="content-aside">
+      <div id="floating-panel" class="table-select">
+        <button class="btn" id="sul-sp">Região Sul</button>
+        <button class="btn" id="center-sp">Região Central</button>
+        <button class="btn" id="north-sp">Região Norte</button>
+        <button class="btn" id="lest-sp">Região Leste</button>
+        <button class="btn" id="oeste-sp">Região Oeste</button>
+      </div>
+      <div class="subtitles">
+        <ul>
+          <div class="div-subtitles">
+            <li id="drivers-count"></li>
+          </div>
+          <div class="div-subtitles">
+            <li id="ready-drivers"></li>
+          </div>
+          <div class="div-subtitles">
+            <li id="busy-drivers"></li>
+          </div>
+        </ul>
+      </div>
+    </div>
 
-  <div class="subtitles">
-    <ul>
-      <div class="div-subtitles">
-        <div class="ball-color"></div>
-        <li id="drivers-count"></li>
-      </div>
-      <div class="div-subtitles">
-        <div class="ball-color background-blue"></div>
-        <li id="ready-drivers"></li>
-      </div>
-      <div class="div-subtitles">
-        <div class="ball-color background-red"></div>
-        <li id="busy-drivers"></li>
-      </div>
-    </ul>
-  </div>
+    <div id="map" class="map-style"></div>
+  </main>
+
   <footer>
     Desenvolvido por Luana Andrade, Marjorie e Ully
   </footer>
