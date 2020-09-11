@@ -15,6 +15,7 @@ header {
   border-bottom: 3px solid #ff8400;
   background: #ff8400;
   width: 100%;
+  margin-bottom: 25px;
 }
 
 button,
@@ -135,34 +136,3 @@ footer {
   width: 100%;
   margin-top: 25px;
 }
-
-@media (min-width: 620px) {
-  .logo-loggi {
-    max-width: 30vw;
-  }
-
-  header {
-    height: 25vh;
-  }
-
-  .subtitles {
-    height: 16vh;
-  }
-
-  /* .btn {
-    height: 8vh;
-    font-size: 20px;
-    width: 22vw;
-  }
-
-  .table-select {
-    width: 100%;
-    left: 0;
-    height: 10vh;
-  } */
-}
-
-/* 
-@media (min-width: 1200px) { */
-
-/* } */
